@@ -14,5 +14,5 @@ async def send(msg):
 
     session = AiohttpSession()
     bot = Bot(token=os.getenv('TOKEN'), session=session)
-    await bot.send_message(chat_id=-1002439838642, text=txt)
+    await bot.send_message(chat_id=os.getenv('chat_id'), text=txt)
     await bot.session.close()
