@@ -5,10 +5,6 @@ import os
 
 
 async def send(msg):
-    """
-    Send a message to a telegram user or group specified on chatId
-    chat_id must be a number!
-    """
     load_dotenv()
     txt = f'''{msg}'''
 
